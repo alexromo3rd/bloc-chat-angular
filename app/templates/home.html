@@ -1,8 +1,13 @@
 <div class="container-fluid">
-	<h1 class="col-md-4">Bloc Chat</h1>
-	<div ng-repeat="room in home.rooms">
-		<div class="col-md-4">{{ room.$value }}</div>
-	</div>
+	<section class="side-bar col-md-3">
+		<h1 class="app-name">Bloc Chat</h1>
+		<div ng-repeat="room in home.rooms">
+			<div class="room-list">{{ room.$value }}</div>
+		</div>
+	</section>
+	<main class="main-section col-md-9">
+		<!-- content -->
+	</main>
 </div>
 	
 

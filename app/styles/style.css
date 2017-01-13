@@ -1,0 +1,29 @@
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.container-fluid {
+	margin: 0px -15px;
+}
+/* Side Bar Content */
+.side-bar {
+	background-color: #78909C;
+	color: #FFF;
+	min-height: 960px;
+}
+
+.app-name {
+	padding-bottom:0.5em;
+}
+
+.room-list {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+/* Main Section */
+.main-section {
+	background-color: #CFD8DC;
+	min-height: 960px;
+}
