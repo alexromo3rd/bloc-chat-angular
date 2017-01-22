@@ -8,7 +8,7 @@
 		}
 
 		this.cancel = function() {
-			console.log("got to cancel")
+			$uibModalInstance.dismiss();
 
 			// dismiss modal
 		}
