@@ -1,12 +1,18 @@
-<div>
+<form>
 	<div class="modal-header">
-		"Header"
+		<h1>Create new room</h1>
 	</div>
 	<div class="modal-body">
-		"Body"
+		<h3>Enter a room name</h3>
+		<p>
+			<input type="text" ng-modal="this.name" />
+		</p>
+		<p>
+			You entered: {{ this.name }}
+		</p>
 	</div>
 	<div class="modal-footer">
 		<button class="btn btn-default" type="button" ng-click="modalInstance.cancel()">Cancel</button>
-	<button class="btn btn-primary" type="button" ng-click="modalInstance.ok()">Create</button>
+	<button class="btn btn-primary" type="button" ng-click="modalInstance.ok(this.name)">Create</button>
 	</div>
-</div>
+</form>

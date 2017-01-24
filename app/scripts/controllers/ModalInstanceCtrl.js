@@ -1,16 +1,16 @@
 (function() {
 	function ModalInstanceCtrl($uibModalInstance) {
 
-		this.ok = function() {
-			console.log("got to OK")
-			// close the modal, and pass the room name into the close function
+		this.name = "";
 
+		this.ok = function(name) {
+			// close the modal, and pass the room name into the close function
+			$uibModalInstance.close(name);
 		}
 
 		this.cancel = function() {
-			$uibModalInstance.dismiss();
-
 			// dismiss modal
+			$uibModalInstance.dismiss();
 		}
 
 	}

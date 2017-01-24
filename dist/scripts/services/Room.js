@@ -7,6 +7,7 @@
 			all: rooms,
 			create: function(name) {
 				// store in firebase using $add
+
 			}
 		};
 	}
