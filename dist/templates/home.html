@@ -1,6 +1,9 @@
 <div class="container-fluid">
 	<section class="side-bar col-md-3">
 		<h1 class="app-name">Bloc Chat</h1>
+		<div ng-controller='ModalCtrl as modal'>
+		 	<button type="button" class="btn btn-default" ng-click="modal.open()">New room</button>
+		</div>
 		<div ng-repeat="room in home.rooms">
 			<div class="room-list">{{ room.$value }}</div>
 		</div>
@@ -9,5 +12,3 @@
 		<!-- content -->
 	</main>
 </div>
-	
-

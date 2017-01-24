@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Bloc Chat Angular</title>
     <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.css">
     <link rel="stylesheet" href="/styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
@@ -26,10 +26,15 @@
     };
     firebase.initializeApp(config);
   </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.2/ui-bootstrap-tpls.min.js"></script>
   <script src="/scripts/app.js"></script>
   <script src="/scripts/services/Room.js"></script>
   <script src="/scripts/controllers/HomeCtrl.js"></script>
+  <script src="/scripts/controllers/ModalCtrl.js"></script>
+  <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
 </body>
 </html>
