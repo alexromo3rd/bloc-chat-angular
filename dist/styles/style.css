@@ -2,24 +2,27 @@
 	font-family: 'Quicksand', sans-serif;
 }
 
-.container-fluid {
-	margin: 0px -15px;
-}
 /* Side Bar Content */
 .side-bar {
 	background-color: #78909C;
 	color: #FFF;
 	min-height: 960px;
+	float: left;
+	padding: 0px 20px;
 }
 
 .app-name {
-	padding-bottom:0.5em;
+	margin-bottom: 10px;
+}
+
+.btn-new-room {
+	margin-bottom: 10px;
 }
 
 .room-list {
 	font-weight: bold;
 	font-size: 1.2em;
-	margin-bottom: 1em;
+	margin-bottom: 10px;
 }
 
 /* Main Section */
