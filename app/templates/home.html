@@ -5,12 +5,13 @@
 			<div ng-controller='ModalCtrl as modal'>
 			 	<button type="button" class="btn btn-default btn-block btn-new-room" ng-click="modal.open()">New Room</button>
 			</div>
-			<div ng-repeat="room in home.rooms">
-				<div class="room-list">{{ room.$value }}</div>
-			</div>
+			<ul class="room-list" ng-repeat="room in home.rooms">
+				<li class="room-name" ng-click="activeRoom(room.$value)">{{ room.$value }}</li>
+			</ul>
 		</section>
 		<main class="main-section col-md-9">
-		<!-- content -->
+			<h1>{{ currentRoom }}</h1>
+
 		</main>
 	</div>
 </div>
