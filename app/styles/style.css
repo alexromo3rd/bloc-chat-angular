@@ -35,6 +35,12 @@
 .main-section {
 	background-color: #CFD8DC;
 	min-height: 960px;
+	margin-top: -10px;
+}
+
+.main-section-title {
+	text-align: center;
+	color: #78909C;
 }
 
 /* Media Queries */
