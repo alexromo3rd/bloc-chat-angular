@@ -2,10 +2,9 @@
 	function HomeCtrl(Room, Message, $scope) {
 		this.rooms = Room.all;
 
-		this.messages = Message.getByRoomId;
-
-		$scope.activeRoom = function(name) {
-			$scope.currentRoom = name;
+		$scope.activeRoom = function(room) {
+			$scope.currentRoom = room;
+			$scope.messages = Message.getByRoomId($scope.currentRoom.$id);
 		};
 	}
 

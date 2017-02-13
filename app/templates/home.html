@@ -11,9 +11,7 @@
 		</section>
 		<main class="main-section col-md-9">
 			<h1 class="main-section-title">{{ currentRoom }}</h1>
-			<!-- <ul class="message-list" ng-repeat="message in home.messages">
-				<li>{{ message }}</li> -->
-			</ul>
+			<div ng-repeat="message in messages">{{ message.content }}</div>
 		</main>
 	</div>
 </div>
