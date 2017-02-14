@@ -6,12 +6,12 @@
 			 	<button type="button" class="btn btn-default btn-block btn-new-room" ng-click="modal.open()">New Room</button>
 			</div>
 			<ul class="room-list" ng-repeat="room in home.rooms">
-				<li class="room-name" ng-click="activeRoom(room.$value)">{{ room.$value }}</li>
+				<li class="room-name" ng-click="activeRoom(room)">{{ room.$value }}</li>
 			</ul>
 		</section>
 		<main class="main-section col-md-9">
-			<h1 class="main-section-title">{{ currentRoom }}</h1>
-			<div ng-repeat="message in messages">{{ message.content }}</div>
+			<h1 class="main-section-title">{{ currentRoom.$value }}</h1>
+			<div ng-repeat="message in messages track by $index">{{ message.content }}</div>
 		</main>
 	</div>
 </div>
