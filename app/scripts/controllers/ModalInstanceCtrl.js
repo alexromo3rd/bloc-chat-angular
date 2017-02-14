@@ -3,11 +3,11 @@
 
 		this.ok = function() {
 			$uibModalInstance.close(this.name);
-		}
+		};
 
 		this.cancel = function() {
 			$uibModalInstance.dismiss();
-		}
+		};
 
 	}
 
