@@ -2,7 +2,7 @@
 	function UsernameModalCtrl($uibModalInstance, $cookies) {
 
     this.ok = function() {
-      if (this.name != '') {
+      if (this.name !== '') {
         $cookies.put('blocChatCurrentUser', this.name);
         console.log($cookies.get('blocChatCurrentUser'));
       }

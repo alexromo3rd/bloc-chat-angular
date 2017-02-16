@@ -1,7 +1,7 @@
 (function() {
 	function HomeCtrl(Room, Message, $scope, $cookies) {
 		this.rooms = Room.all;
-		this.currentUser = $cookies.get('blocChatCurrentUser');
+		$scope.currentUser = $cookies.get('blocChatCurrentUser');
 
 		$scope.activeRoom = function(room) {
 			$scope.currentRoom = room;
