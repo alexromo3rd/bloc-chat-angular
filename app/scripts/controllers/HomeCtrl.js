@@ -1,6 +1,7 @@
 (function() {
-	function HomeCtrl(Room, Message, $scope) {
+	function HomeCtrl(Room, Message, $scope, $cookies) {
 		this.rooms = Room.all;
+		this.currentUser = $cookies.get('blocChatCurrentUser');
 
 		$scope.activeRoom = function(room) {
 			$scope.currentRoom = room;
@@ -10,5 +11,5 @@
 
 	angular
 		.module('blocChat')
-		.controller('HomeCtrl', ['Room', 'Message', '$scope', HomeCtrl]);
+		.controller('HomeCtrl', ['Room', 'Message', '$scope', '$cookies', HomeCtrl]);
 })();

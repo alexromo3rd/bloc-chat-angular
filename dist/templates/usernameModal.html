@@ -1,0 +1,14 @@
+<form ng-submit="usernameModal.ok()">
+	<div class="modal-header">
+		<h1>Before you can enter...</h1>
+	</div>
+	<div class="modal-body">
+		<h3>Please enter a username</h3>
+		<p>
+			<input type="text" ng-model="usernameModal.name"/>
+		</p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button" ng-click="usernameModal.ok()">Submit</button>
+	</div>
+</form>
