@@ -7,7 +7,6 @@
 	background-color: #78909C;
 	color: #FFF;
 	min-height: 960px;
-	float: left;
 	padding: 0px 20px;
 }
 
@@ -28,7 +27,7 @@
 .room-name {
 	font-weight: bold;
 	font-size: 1.2em;
-	margin-bottom: 10px;
+	line-height: 1.8;
 }
 
 /* Main Section */
@@ -43,11 +42,15 @@
 	color: #78909C;
 }
 
-.new-message {
+.message-box-bottom {
+	clear: right;
+}
+
+input[type="text"] {
 	position: fixed;
 	bottom: 0;
-	width: 100%;
-	margin-bottom: -10px;
+	width: 70%;
+	height: 4%;
 }
 
 /* Media Queries */
