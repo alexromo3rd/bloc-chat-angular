@@ -4,6 +4,7 @@
 
 /* Side Bar Content */
 .side-bar {
+	float: left;
 	background-color: #78909C;
 	color: #FFF;
 	min-height: 960px;
@@ -43,14 +44,27 @@
 }
 
 .message-box-bottom {
-	clear: right;
-}
-
-input[type="text"] {
 	position: fixed;
 	bottom: 0;
-	width: 70%;
-	height: 4%;
+	right: 0;
+}
+
+.new-message {
+	margin: 0;
+}
+
+.new-message-input {
+	height: 60px;
+	padding: 0;
+	margin-bottom: 0;
+	width: 800px;
+}
+
+.send-button {
+	height: 65px;
+	padding: 0;
+	margin-bottom: 0;
+	width: 70px;
 }
 
 /* Media Queries */
