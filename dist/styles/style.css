@@ -7,8 +7,8 @@
 	float: left;
 	background-color: #78909C;
 	color: #FFF;
-	min-height: 960px;
 	padding: 0px 20px;
+	height: 100vh;
 }
 
 .app-name {
@@ -34,8 +34,9 @@
 /* Main Section */
 .main-section {
 	background-color: #CFD8DC;
-	min-height: 960px;
 	margin-top: -10px;
+	margin-right: -20px;
+	height: 100vh;
 }
 
 .main-section-title {
@@ -54,10 +55,10 @@
 }
 
 .new-message-input {
-	height: 60px;
+	height: 65px;
 	padding: 0;
 	margin-bottom: 0;
-	width: 800px;
+	box-sizing: border-box;
 }
 
 .send-button {
