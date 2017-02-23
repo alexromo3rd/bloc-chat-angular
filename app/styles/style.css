@@ -2,6 +2,10 @@
 	font-family: 'Quicksand', sans-serif;
 }
 
+.center {
+	text-align: center;
+}
+
 /* Side Bar Content */
 .side-bar {
 	background-color: #78909C;
@@ -37,7 +41,6 @@
 }
 
 .main-section-title {
-	text-align: center;
 	color: #78909C;
 }
 
@@ -48,23 +51,18 @@
 	padding: 0;
 }
 
-.new-message {
-	margin: 0;
-}
-
 .new-message-input {
 	height: 65px;
 	width: 90%;
-	display: inline-block;
+	border-radius: 2px;
 }
-
 
 .send-button {
 	color: #555555;
 	font-size: 1.2em;
 	height: 65px;
 	width: 10%;
-	display: inline-block;
+	border-radius: 2px;
 	float: right;
 	background-color: #e9e8ed;
 	-webkit-transition-duration: 0.4s; /* Safari */
