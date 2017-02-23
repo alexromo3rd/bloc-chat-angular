@@ -4,7 +4,6 @@
 
 /* Side Bar Content */
 .side-bar {
-	float: left;
 	background-color: #78909C;
 	color: #FFF;
 	padding: 0px 20px;
@@ -34,8 +33,6 @@
 /* Main Section */
 .main-section {
 	background-color: #CFD8DC;
-	margin-top: -10px;
-	margin-right: -20px;
 	height: 100vh;
 }
 
@@ -58,14 +55,25 @@
 	height: 65px;
 	padding: 0;
 	margin-bottom: 0;
-	box-sizing: border-box;
 }
 
+
 .send-button {
+	color: #555555;
+	font-size: 1.2em;
 	height: 65px;
 	padding: 0;
 	margin-bottom: 0;
 	width: 70px;
+	background-color: #e9e8ed;
+	border: 2px solid #555555;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.send-button:hover {
+	background-color: #555555;
+  color: #e9e8ed;
 }
 
 /* Media Queries */

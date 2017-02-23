@@ -13,10 +13,10 @@
 		<main class="main-section col-md-9">
 			<h1 class="main-section-title">{{ currentRoom.$value }}</h1>
 			<p class="user-messages" ng-repeat="message in messages track by $index">{{ message.content }}</p>
-			<div class="message-box-bottom" ng-controller="NewMsgCtrl as newMsg">
+			<div class="message-box-bottom col-md-9" ng-controller="NewMsgCtrl as newMsg">
 				<form class="new-message" ng-submit="send()">
 					<input class="new-message-input" ng-model="newMessage.text"/>
-					<button class="btn btn-default send-button">Send</button>
+					<button class="send-button">Send</button>
 				</form>
 			</div>
 		</main>
