@@ -7,12 +7,9 @@
       getByRoomId: function(roomId) {
         return $firebaseArray(ref.orderByChild("roomId").equalTo(roomId));
       },
-      send: function(text) {
-        messages.$add(text).then(function(ref) {
-					var id = ref.key;
-					console.log("added record with id" + id);
-					messages.$indexFor(id);
-				});
+      send: function(newMessage) {
+        messages.$add(newMessage);
+        console.log(newMessage);
       }
     };
   }

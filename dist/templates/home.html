@@ -14,10 +14,8 @@
 			<h1 class="main-section-title center">{{ currentRoom.$value }}</h1>
 			<p class="user-messages" ng-repeat="message in messages track by $index">{{ message.content }}</p>
 			<div class="col-xs-12 col-sm-12 col-md-9 message-box-bottom" ng-controller="NewMsgCtrl as newMsg">
-				<form ng-submit="newMsg.post()">
-					<input tyep="text" class="new-message-input" ng-model="newMsg.text" title="message"/>
-					<button class="send-button" type="button" ng-click="newMsg.post()">Send</button>
-				</form>
+				<input tyep="text" class="new-message-input" ng-model="newMessage.content" title="message"/>
+				<button class="send-button" type="button" ng-click="addMessage(newMessage.content)">Send</button>
 			</div>
 		</main>
 	</div>

@@ -1,13 +1,20 @@
 (function() {
-    function NewMsgCtrl(Message) {
-        this.post = function(text) {
-				// save the room in firebase using Room service
-				Message.send(text);
-			};
+    function NewMsgCtrl(Message, Room, $scope) {
+        $scope.newMessage = {};
+        
+        $scope.addMessage= function(){
+            var newMessage = {
+                content: $scope.newMessage.content,
+                sentAt: firebase.database.ServerValue.TIMESTAMP,
+                roomId: $scope.currentRoom.$id,
+                username: $scope.currentUser
+            }
+        }
+        Message.send($scope.newMessage);
 
     }
 
     angular
         .module('blocChat')
-        .controller('NewMsgCtrl', ['Message', NewMsgCtrl]);
+        .controller('NewMsgCtrl', ['Message', 'Room', '$scope', NewMsgCtrl]);
 })();
