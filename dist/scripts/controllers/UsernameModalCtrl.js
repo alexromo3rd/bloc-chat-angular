@@ -5,7 +5,7 @@
       if (this.name !== undefined && $.trim(this.name) !== '') {
         $cookies.put('blocChatCurrentUser', this.name);
       } else {
-          window.location.reload();
+          return false;
       }
 			$uibModalInstance.close();
 		};

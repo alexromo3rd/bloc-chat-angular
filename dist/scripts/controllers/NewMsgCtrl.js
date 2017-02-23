@@ -1,11 +1,9 @@
 (function() {
     function NewMsgCtrl(Message) {
-        this.send = function() {
-            modalInstance.result.then(function(name) {
-                // save the room in firebase using Room service
-                Room.create(name);
-            });
-        };
+        this.post = function(text) {
+				// save the room in firebase using Room service
+				Message.send(text);
+			};
 
     }
 
