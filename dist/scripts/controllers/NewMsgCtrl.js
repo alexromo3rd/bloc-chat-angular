@@ -9,8 +9,8 @@
                 roomId: $scope.currentRoom.$id,
                 username: $scope.currentUser
             }
+            Message.send(newMessage);
         }
-        Message.send($scope.newMessage);
 
     }
 

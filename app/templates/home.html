@@ -1,6 +1,6 @@
 <div class="container-fluid">
 	<div class="row">
-		<section class="col-xs-4 col-md-3 side-bar">
+		<section class="col-xs-4 col-sm-4 col-md-3 side-bar">
 			<h1 class="app-name center">Bloc Chat</h1>
 			<h3 class="center">Welcome {{ currentUser }}!</h3>
 			<div ng-controller='ModalCtrl as modal'>
@@ -10,11 +10,17 @@
 				<li class="room-name" ng-click="activeRoom(room)">{{ room.$value }}</li>
 			</ul>
 		</section>
-		<main class="col-xs-8 col-md-9 main-section">
+		<main class="col-xs-8 col-sm-8 col-md-9 main-section">
 			<h1 class="main-section-title center">{{ currentRoom.$value }}</h1>
-			<p class="user-messages" ng-repeat="message in messages track by $index">{{ message.content }}</p>
-			<div class="col-xs-12 col-sm-12 col-md-9 message-box-bottom" ng-controller="NewMsgCtrl as newMsg">
-				<input tyep="text" class="new-message-input" ng-model="newMessage.content" title="message"/>
+			<div ng-repeat="message in messages track by $index">
+				<div ng-class-odd="'odd'" ng-class-even="'even'">
+					<p class="small-text">From: <strong>{{message.username}}</strong></p>
+					<p class="user-messages">{{ message.content }}</p>
+					<p class="small-text"><em>Sent on: {{message.sentAt | date:"MM/dd/yyyy 'at' h:mma"}}</em></p>
+				</div>
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-9 message-box-bottom" ng-controller="NewMsgCtrl as newMsg">
+				<input type="text" class="new-message-input" ng-model="newMessage.content" title="message"/>
 				<button class="send-button" type="button" ng-click="addMessage(newMessage.content)">Send</button>
 			</div>
 		</main>

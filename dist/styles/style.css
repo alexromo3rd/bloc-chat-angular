@@ -44,6 +44,21 @@
 	color: #78909C;
 }
 
+.small-text {
+	font-size: 0.8em;
+}
+
+.odd {
+	background-color: #60676b;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.even {
+	background-color: #F7F7F7;
+	margin-bottom: 5px;
+}
+
 .message-box-bottom {
 	position: fixed;
 	bottom: 0;
