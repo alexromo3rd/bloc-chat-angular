@@ -1,6 +1,6 @@
 <div class="container-fluid">
 	<div class="row">
-		<section class="col-md-3 side-bar">
+		<section class="col-xs-4 col-md-3 side-bar">
 			<h1 class="app-name center">Bloc Chat</h1>
 			<h3 class="center">Welcome {{ currentUser }}!</h3>
 			<div ng-controller='ModalCtrl as modal'>
@@ -10,7 +10,7 @@
 				<li class="room-name" ng-click="activeRoom(room)">{{ room.$value }}</li>
 			</ul>
 		</section>
-		<main class="col-md-9 main-section">
+		<main class="col-xs-8 col-md-9 main-section">
 			<h1 class="main-section-title center">{{ currentRoom.$value }}</h1>
 			<p class="user-messages" ng-repeat="message in messages track by $index">{{ message.content }}</p>
 			<div class="col-xs-12 col-sm-12 col-md-9 message-box-bottom" ng-controller="NewMsgCtrl as newMsg">
